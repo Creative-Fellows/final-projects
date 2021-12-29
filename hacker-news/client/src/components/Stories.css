@@ -1,0 +1,13 @@
+h3{
+    color: blueviolet;
+}
+
+.col-3{
+    align-items: center;
+    display: inline-flex;
+}
+
+.hi{
+    float: left;
+    margin-left: 100px;
+}

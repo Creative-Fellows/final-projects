@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+nav ul li {
+  
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+nav ul li:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}

@@ -2,7 +2,8 @@ import "./Stories.css"
 import Axios from 'axios';
 import React,{useState,useEffect} from "react";
 
-function Stories() {
+
+  function Stories() {
 
     const [listOfStories,setListOfStories]= useState([]);
     useEffect(() => {
@@ -17,19 +18,20 @@ function Stories() {
          <h3>Top 10 Stories</h3>
          <div class="row">
             <div class="col-3">
-                <span className="mah"> <h5>Title</h5>{listOfStories.map((user) => {
-                 return <p>{user.title}</p>;})}</span>
-                
-        
-           
-            <div class="col-3">
-                <span className="hi">
-                <h5>Author</h5> {listOfStories.map((user) => {
+            <table id="story_table">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    
+                </tr>
+                <tr>
+                <td>{listOfStories.map((user) => {
+                 return <p>{user.title}</p>;})}</td>
+
+               <td>{listOfStories.map((user) => {
                  return <p>{user.by.id}</p>;
-        })}
-                </span>
-                
-            </div>
+                })} </td></tr></table>
+            
            
          </div>
      </div>
@@ -43,4 +45,3 @@ function Stories() {
   }
   
   export default Stories;
-  

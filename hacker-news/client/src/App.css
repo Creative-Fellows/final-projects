@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -49,6 +49,53 @@ nav ul li {
   
 }
 nav ul li:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   color: white;
+}*/
+.App {
+  text-align: center;
+}
+
+.aParent {
+  float: left;
+  width: 10%;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.title {
+  background-color: lightgreen;
+}
+
+.author {
+  background-color: lightgreen;
+}
+
+.authors {
+  float: left;
+}
+nav {
+  height: 50px;
+  background-color: greenyellow;
+}
+.liste {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.items {
+  margin-right: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }

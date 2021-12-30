@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "seed-database": "node seed.js"
+    "seed-database": "node seed.js",
+    "newseed-database": "node seedwork.js"
   },
   "keywords": [],
   "author": "",

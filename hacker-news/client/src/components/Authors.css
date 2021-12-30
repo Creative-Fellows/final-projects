@@ -1,0 +1,14 @@
+.author{
+    float: left;
+    margin-left: 10px;
+}
+.title{
+    float: left;
+    margin-left: 8px;
+    border-radius: 15px 40px 30px 5px;
+    box-sizing: content-box;
+    
+}
+div{
+    margin-left: 20px;
+}

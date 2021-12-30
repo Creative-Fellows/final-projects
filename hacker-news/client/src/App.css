@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+.parent {
+  float: left;
+  width: 10%; 
+}
+.title {
+  background-color: rgb(164, 144, 238);
+}
+.author {
+  background-color: rgb(164, 144, 238);
+}
+.authors {
+  float: left;
+}
+.liste {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.items {
+  margin-right: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}*/
+.App {
+  text-align: center;
+}
+
+.Parent {
+  float: left;
+  width: 10%;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+.title {
+  background-color: rgb(47, 144, 255);
+}
+
+.author {
+  background-color: rgb(47, 144, 255);
+}
+
+.authors {
+  float: left;
+}
+nav {
+  height: 50px;
+  background-color: rgb(47, 144, 255);
+}
+.liste {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.items {
+  margin-right: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }

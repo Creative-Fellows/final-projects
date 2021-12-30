@@ -7,7 +7,6 @@ const authorSchema = new mongoose.Schema({
   },
   about: {
     type: String,
-    required: true,
   },
   karma: {
     type: Number,

@@ -3,23 +3,22 @@ const Story = require("./models/Story");
 const seedStory = require("../dummy_data");
 const dbconnection = require("./db/index");
 const Author = require("./models/Author");
-dbconnection()
+
+dbconnection();
 
 var x = [];
 for (const obj of seedStory) {
   x.push(obj.by);
 }
-
 const seedDB = async () => {
-    await Story.deleteMany({});
-    await Story.insertMany(seedStory);
-  
-    await Author.deleteMany({});
-    await Author.insertMany(x);
-  };
-  
+  await Story.deleteMany({});
+  await Story.insertMany(seedStory);
 
-  seedDB().then(() => {
-    mongoose.connection.close();
-  });
-  
+  await Author.deleteMany({});
+  await Author.insertMany(x);
+};
+
+console.log(x);
+seedDB().then(() => {
+  mongoose.connection.close();
+});

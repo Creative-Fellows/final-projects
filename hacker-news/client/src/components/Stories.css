@@ -1,11 +1,13 @@
-h3{color:rgb(7, 68, 138)}
-
-.mah1{
-    float: left;
-    margin-left: 100px;
+h5{
+    color: rgb(14, 13, 13);  
 }
-.Nour{
+
+.col-3{
     align-items: center;
     display: inline-flex;
-
+    
 }
+.header{
+    margin-left: 10px;
+}
+

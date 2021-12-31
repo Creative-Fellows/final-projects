@@ -4,9 +4,14 @@ import Stories from "./components/Stories";
 import Authors from "./components/Authors";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Search from "./components/Search";
+import Recommended from "./components/Recommended";
 
 
 function App() {
+  setTimeout(function () {
+    window.location.reload();
+    console.log("it refresh");
+  }, 60 * 1000);
   return (
     <div className="App">
       <Router>
@@ -31,6 +36,8 @@ function App() {
           <Route path="/" element={<Stories />} />
           <Route path="/authors" element={<Authors />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/similar/:stories" element={<Recommended />} />
+          <Route path="/similar" element={<Recommended />} />
         </Routes>
       </Router>
       {/* <Stories /> */}

@@ -8,13 +8,13 @@ import Test from "./components/Test";
 import Recommended from "./components/Recommended";
 
 function App() {
+  setTimeout(function () {
+    window.location.reload();
+    console.log("it refresh");
+  }, 60 * 1000);
   return (
     <div className="App">
       <Router>
-        {/* <nav>
-          <Link to="/">Stories</Link>
-          <Link to="/authors">Authors</Link>
-        </nav> */}
         <nav>
           <ul className="liste">
             <Link to="/">

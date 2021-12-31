@@ -5,6 +5,7 @@ import Authors from "./components/Authors";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Search from "./components/Search";
 import Test from "./components/Test";
+import Recommended from "./components/Recommended";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           <Route path="/" element={<Stories />} />
           <Route path="/authors" element={<Authors />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/similar/:stories" element={<Recommended />} />
+          <Route path="/similar" element={<Recommended />} />
         </Routes>
       </Router>
       {/* <Stories /> */}

@@ -47,6 +47,7 @@ import React,{useState,useEffect} from "react";
   export default Stories;*/
   import React, { useState, useEffect } from "react";
   import Axios from "axios";
+  import { Link } from "react-router-dom";
   
   export default function Stories() {
     const [listOfUsers, setListOfUsers] = useState([]);
@@ -65,7 +66,14 @@ import React,{useState,useEffect} from "react";
         <div className="aParent">
           <span className="title">Title</span>
           {listOfUsers.map((user) => {
-            return <p className="nowrap">{user.title}</p>;
+            return (
+              <div key={user.title}>
+                {" "}
+                <Link className="link" to={`/similar/${user.title}`}>
+                  <p className="nowrap">{user.title}</p>
+                </Link>
+              </div>
+            );
           })}
         </div>
         <div>
@@ -76,4 +84,4 @@ import React,{useState,useEffect} from "react";
         </div>
       </div>
     );
-  } 
+  }
